@@ -1,0 +1,237 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Jun 30, 2021, 5:39:10 PM
+    Author     : phuon
+*/
+
+html {
+    font-family: 'Times New Roman', "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    background-color: #FFFFFF;
+}
+
+.container {
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    background: url(../images/front.jpg);
+    width: 980px;
+    height: 220px;
+}
+
+header .header-name {
+    text-align: center;
+    color: white;
+}
+
+header .header-name .title {
+    font-size: 40px;
+    padding-top: 10px;
+    margin: 0px;
+}
+
+header .header-name .panel-name {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+/* main container */
+.main {
+    width: 980px;
+    height: auto;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+/* menu bar */
+.menu-bar {
+    margin-top: -35px;
+    width: 16%;
+    height: 300px;
+}
+
+.menu-bar .option {
+    margin-top: 15px;
+    border: 1px solid #d2d2d2;
+    background-image: linear-gradient(to top, #e8e8e8, #fcfcfc);
+    height: auto;
+}
+
+.menu-bar .option a {
+    color: #575758;
+    text-decoration: none;
+    font-weight: normal;
+    width: 100%;
+}
+
+.menu-bar .option p {
+    margin: 5px;
+    color: #0f5591;
+    font-weight: bold;
+}
+
+/* content */
+.content {
+    margin-top: -95px;
+    margin-left: 30px;
+    width: 61%;
+    height: auto;
+}
+
+.content h2,
+.content h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #3d7bbb;
+}
+
+/* login page */
+.login-page {
+    text-align: center;
+}
+
+.login-page table {
+    margin: 1em auto 0;
+    border: none;
+}
+
+.login-page .account-info>td {
+    padding-bottom: 1em;
+}
+
+.login-page input {
+    width: 200px;
+}
+
+.login-page .button {
+    margin-left: 30px;
+    width: 80px;
+}
+
+.login-page .danger-text {
+    color: red;
+}
+
+/* home page */
+.home-page table,
+.view-request table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #817e7e;
+}
+
+.home-page table th,
+.view-request table th {
+    border: 1px solid #817e7e;
+    padding: 10px 0;
+    width: 200px;
+    background-image: linear-gradient(to top, #d7d7d7, white, white);
+    font-weight: normal;
+
+}
+
+.home-page table td,
+.view-request table td {
+    border: 1px solid #817e7e;
+    padding: 10px;
+}
+
+.home-page table a {
+    text-decoration: none;
+    color: black;
+}
+
+.home-page table td:first-child,
+.view-request table td:first-child {
+    color: green;
+}
+
+/* view request */
+.view-request .search-form {
+    border-left: 2px solid #817e7e;
+    border-top: 2px solid #817e7e;
+    border-right: 2px solid #817e7e;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    height: auto;
+    background-image: linear-gradient(to top, #d6d6d6 40%, white 100%);
+}
+
+.view-request form {
+    padding: 5px 0 15px;
+    font-weight: bold;
+}
+
+.view-request table a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.view-request table td:not(:first-child) {
+    text-align: center;
+}
+
+/* solve request */
+.solve-request table td {
+    width: 70%;
+    text-align: left;
+    padding-top: 0.3em;
+}
+
+.solve-request table td:first-child {
+    width: 30%;
+    text-align: right;
+    vertical-align: top;
+}
+
+.solve-request input[type=text] {
+    width: 60%;
+}
+
+.solve-request label.approved {
+    color: blue;
+}
+
+.solve-request label.rejected {
+    color: red;
+}
+
+.solve-request textarea {
+    resize: none;
+}
+
+.solve-request .button {
+    background-image: linear-gradient(to top, #d7d7d7, white, white);
+    height: 2em;
+    padding: 0 20px;
+    border: 1px solid #817e7e;
+}
+
+/* error page */
+.error-page {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* footer */
+footer {
+    background: url(../images/footerbg.jpg);
+    width: 980px;
+    height: 84px;
+    text-align: center;
+    padding: 10px;
+}

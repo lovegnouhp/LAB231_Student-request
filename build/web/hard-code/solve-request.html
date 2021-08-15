@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/favicon.ico" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <script src="../js/javascript.js" type="text/javascript"></script>
+    <title>Home pages</title>
+</head>
+
+<body onload="getDateToday()">
+    <div class="container">
+        <header>
+            <div class="header-name">
+                <h1 class="title">FPT Education System</h1>
+                <h2 class="panel-name">Teacher Control Panel</h2>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="menu-bar">
+                <div class="option">
+                    <p>
+                        <a href="login.html">Login</a>
+                    </p>
+                </div>
+                <div class="option">
+                    <p class="home"><a href="home.html">Home</a></p>
+                </div>
+                <div class="option">
+                    <p class="view-request"><a href="view-request.html">View requests</a></p>
+                </div>
+                <div class="option">
+                    <p class="solve-request"><a href="solve-request.html">Solve requests</a></p>
+                </div>
+                <div class="option">
+                    <p class="today">Today is: <span id="today"></span></p>
+                </div>
+            </div>
+
+
+            <div class="content solve-request">
+                <form action="solve-request" method="POST">
+                    <h2>Request ID: 1</h2>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Request to department</td>
+                                <td><input type="text" name="department-name" value="Academic Department" readonly />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Student ID</td>
+                                <td><input type="text" name="student-id" value="SE0000" readonly /></td>
+                            </tr>
+                            <tr>
+                                <td>Student name</td>
+                                <td><input type="text" name="student-name" value="Dao Trong Duy" readonly /></td>
+                            </tr>
+                            <tr>
+                                <td>Date created</td>
+                                <td><input type="text" name="date-created" value="04/16/2016" readonly /></td>
+                            </tr>
+                            <tr>
+                                <td>Request title</td>
+                                <td><input type="text" name="title" value="Don dang ki thi tham dinh mon online"
+                                        readonly /></td>
+                            </tr>
+                            <tr>
+                                <td>Request content</td>
+                                <td>
+                                    <textarea name="content" rows="5" cols="50"
+                                        readonly>In query for the result of PRJ321-PE (1st time). I wanna check my solution again</textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Request state</td>
+                                <td>
+                                    <input type="radio" id="approved" name="state" value="1"
+                                        onclick="setRequestState()">
+                                    <label class="approved" for="approved">Approved</label>
+                                    <input type="radio" id="rejected" name="state" value="0"
+                                        onclick="setRequestState()">
+                                    <label class="rejected" for="rejected">Rejected</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Close date</td>
+                                <td><input type="text" id="close_date" name="close-date" value="" readonly /></td>
+                            </tr>
+                            <tr>
+                                <td>Solved by</td>
+                                <td><input type="text" id="solved_by" name="solved-by" value="" readonly /></td>
+                            </tr>
+                            <tr>
+                                <td>Attached (if any)</td>
+                                <td><a href="" download>
+                                        <button class="button" name="download-attached" type="button">Download</button>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>School's solution</td>
+                                <td>
+                                    <textarea name="solution" rows="5" cols="50"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input class="button" type="submit" value="Save" /></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="success-message" name="success-message">Solve request successfull.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input type="hidden" name="request-id" value="1" />
+                    <input type="hidden" id="username" value="admin" />
+                </form>
+            </div>
+
+        </div>
+        <footer>
+            copy right Phuong Ngo
+        </footer>
+    </div>
+</body>
+
+</html>
